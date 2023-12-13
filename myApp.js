@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 
+console.log("Hello World");
 // --> 7)  Mount the Logger middleware here
 app.use('', function (req, res, next) {
 	console.log(req.method + ' ' + req.path + ' - ' + req.ip);
